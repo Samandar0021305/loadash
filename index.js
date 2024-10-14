@@ -1,5 +1,7 @@
-const cloneDeep = require('./src/cloneDeep');
 
-module.exports = {
+const cloneDeep = require('./src/cloneDeep')
+
+module.exports  = {
     cloneDeep
 }
+

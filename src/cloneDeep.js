@@ -1,4 +1,4 @@
-function cloneDeep(obj, map = new Map()) {
+ function cloneDeep(obj, map = new Map()) {
     if (obj === null || typeof obj !== 'object') {
         return obj;
     }
@@ -15,4 +15,4 @@ function cloneDeep(obj, map = new Map()) {
     return output;
 }
 
-module.exports =  cloneDeep;
+module.exports = cloneDeep;
