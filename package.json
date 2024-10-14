@@ -1,8 +1,9 @@
 {
   "name": "sloadash",
-  "version": "1.8.0",
+  "version": "2.0.0",
   "description": "",
   "main": "index.js",
+  "type": "commonjs",
   "scripts": {
     "test": "loadash",
      "build": "babel src --out-dir lib"
