@@ -197,7 +197,5 @@ console.log(newArr); // [1, 2, 3, 4]
 Contribution
 Feel free to open issues or submit pull requests if you'd like to add more utility functions or improve existing ones.
 
-License
-MIT License. See the LICENSE file for more information.
 
 This is a basic overview of the functions in this project. It gives users a clear understanding of what each function does, how to use them, and some practical examples to make the integration smoother.
