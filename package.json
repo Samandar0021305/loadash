@@ -1,0 +1,27 @@
+{
+  "name": "sloadash",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "loadash",
+     "build": "babel src --out-dir lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Samandar0021305/loadash.git"
+  },
+  "keywords": [
+    "loadash"
+  ],
+  "author": "Samandar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Samandar0021305/loadash/issues"
+  },
+  "homepage": "https://github.com/Samandar0021305/loadash#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.25.7",
+    "@babel/preset-env": "^7.25.8"
+  }
+}
