@@ -1,33 +1,58 @@
 {
   "name": "sloadash",
-  "version": "2.1.1",
-  "description": "",
-  "main": "lib/index.js", 
-  "type": "module",      
-  "types": "lib/index.d.ts",  
-  "scripts": {
-    "test": "loadash",  
-    "build": "babel src --out-dir lib",  
-    "prepare": "npm run build"  
-  },
+  "version": "2.1.0",
+  "private": false,
+  "description": "A set of loadash-like utilities in TypeScript.",
+  "author": "Samandar",
+  "license": "ISC",
+  "homepage": "https://github.com/Samandar0021305/loadash#readme",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Samandar0021305/loadash.git"
   },
-  "keywords": [
-    "loadash"
-  ],
-  "author": "Samandar",
-  "license": "ISC",
   "bugs": {
     "url": "https://github.com/Samandar0021305/loadash/issues"
   },
-  "homepage": "https://github.com/Samandar0021305/loadash#readme",
+  "keywords": [
+    "lodash",
+    "typescript",
+    "utilities"
+  ],
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "types": "./lib/index.d.ts",
+      "import": "./lib/index.js"
+    }
+  },
+  "module": "./lib/index.js",
+  "types": "./lib/index.d.ts",
+  "files": [
+    "lib",
+    "lib/types"
+  ],
+  "scripts": {
+    "lint": "eslint --cache .",
+    "lint:fix": "eslint . --fix",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "typecheck": "tsc --noEmit",
+    "build": "babel src --out-dir lib --extensions .ts && tsc --emitDeclarationOnly",
+    "pub": "npm publish --access public"
+  },
   "devDependencies": {
     "@babel/cli": "^7.25.7",
     "@babel/preset-env": "^7.25.8",
-    "typescript": "^4.5.4"  
+    "@babel/preset-typescript": "^7.25.0",
+    "@types/node": "^20.8.3",
+    "eslint": "^8.51.0",
+    "eslint-plugin-sort-keys": "^2.3.5",
+    "typescript": "^5.2.2",
+    "rimraf": "^5.0.5",
+    "vite": "^4.4.11"
   },
-  "dependencies": {
+  "lint-staged": {
+    "*.{js,ts,tsx,vue,md}": [
+      "eslint --cache --fix"
+    ]
   }
 }
