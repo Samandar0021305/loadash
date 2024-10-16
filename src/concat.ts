@@ -1,4 +1,4 @@
-function concat(arr = [], ...args) {
+export default function concat<T>(arr: T[] = [], ...args: (T | T[])[]): T[] {
   for (let item of args) {
     if (Array.isArray(item)) {
       arr.push(...item);
@@ -8,4 +8,3 @@ function concat(arr = [], ...args) {
   }
   return arr;
 }
-module.exports = concat;
