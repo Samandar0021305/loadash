@@ -1,6 +1,6 @@
 {
   "name": "sloadash",
-  "version": "2.1.0",
+  "version": "2.1.2",
   "private": false,
   "description": "A set of loadash-like utilities in TypeScript.",
   "author": "Samandar",
