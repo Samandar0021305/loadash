@@ -15,6 +15,7 @@ Returns: A deep copy of the given value.
 Usage:
 
 ```javascript
+import { deepClone } from "sloadash"
 const deepClone = cloneDeep({ a: { b: 1 } });
 console.log(deepClone); // { a: { b: 1 } } 2. once(func)
 Description: Creates a function that will execute func only once, no matter how many times it's called.
@@ -28,6 +29,7 @@ Returns: A new function that will only invoke func once.
 Usage:
 
 ```javascript
+import { once } from "sloadash"
 const logOnce = once(() => console.log("Executed"));
 logOnce(); // Executed
 logOnce(); // No output 3. get(object, path, defaultValue)
@@ -45,6 +47,8 @@ Returns: The value at the specified path, or defaultValue if the path is invalid
 Usage:
 
 ```javascript
+import { get } from "sloadash"
+
 const obj = { a: { b: 1 } };
 console.log(get(obj, 'a.b', 0)); // 1
 console.log(get(obj, 'a.c', 0)); // 0 4. concat(arr, ...args)
@@ -59,6 +63,8 @@ Returns: The concatenated array.
 
 Usage:
 ```javascript
+import { concat } from "sloadash"
+
 const arr = [1, 2];
 console.log(concat(arr, [3, 4], 5)); // [1, 2, 3, 4, 5]
 ```
@@ -74,6 +80,7 @@ Returns: An array of values that exist in arr but not in any of the other arrays
 
 Usage:
 ```javascript
+import { difference } from "sloadash"
 const arr1 = [1, 2, 3, 4];
 const arr2 = [3, 4, 5];
 console.log(difference(arr1, arr2)); // [1, 2]
@@ -91,6 +98,7 @@ Returns: The array with the first n elements removed.
 Usage:
 
 ```javascript
+import { drop } from "sloadash"
 const arr = [1, 2, 3, 4];
 console.log(drop(arr, 2)); // [3, 4] 7. fill(arr, value, start = 0, end = arr.length)
 Description: Fills the elements of an array with a specific value between start and end indices.
@@ -108,6 +116,7 @@ Usage:
 
 
 ```javascript
+import { fill } from "sloadash"
 const arr = [1, 2, 3, 4];
 console.log(fill(arr, 0, 1, 3)); // [1, 0, 0, 4] 8. flattenDeep(arr)
 Description: Flattens a nested array recursively.
@@ -121,6 +130,7 @@ Returns: A new array with all nested arrays flattened.
 Usage:
 
 ```javascript
+import { flattenDeep } from "sloadash"
 const arr = [1, [2, [3, [4]]]];
 console.log(flattenDeep(arr)); // [1, 2, 3, 4] 9. head(arr)
 Description: Returns the first element of an array.
@@ -134,6 +144,7 @@ Returns: The first element of the array, or undefined if the array is empty.
 Usage:
 
 ```javascript
+import { head } from "sloadash"
 const arr = [1, 2, 3];
 console.log(head(arr)); // 1 10. initial(arr)
 Description: Returns all elements of an array except the last one.
@@ -147,6 +158,7 @@ Returns: An array with all elements except the last.
 Usage:
 
 ```javascript
+import { initial } from "sloadash"
 const arr = [1, 2, 3];
 console.log(initial(arr)); // [1, 2] 11. intersection(...args)
 Description: Creates an array of values that are present in all given arrays.
@@ -160,6 +172,7 @@ Returns: An array of values that are present in all arrays.
 Usage:
 
 ```javascript
+import { intersection } from "sloadash"
 console.log(intersection([1, 2, 3], [2, 3, 4], [3, 2])); // [2, 3] 12. join(arr, separator = ',')
 Description: Joins all elements of an array into a string with a specified separator.
 ```
@@ -172,6 +185,7 @@ Returns: A string with all elements joined by the separator.
 
 Usage:
 ```javascript
+import { join } from "sloadash"
 const arr = [1, 2, 3];
 console.log(join(arr, '-')); // "1-2-3"
 Installation
@@ -188,7 +202,7 @@ Once installed, you can use the functions like this:
 
 
 ```javascript
-const { cloneDeep, once, get, concat, difference, drop, fill, flattenDeep, head, initial, intersection, join } = require('lodash-utils');
+import { cloneDeep } from "sloadash"
 const arr = [1, 2, 3, 4];
 const newArr = cloneDeep(arr);
 console.log(newArr); // [1, 2, 3, 4]
