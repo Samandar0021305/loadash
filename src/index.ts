@@ -10,6 +10,10 @@ import head from "./head";
 import initial from "./initial";
 import intersection from "./intersection";
 import join from "./join";
+import findIndex from "./findIndex";
+import reverse from "./reverse";
+import tail from './tail';
+import union from "./union"
 
 export {
     cloneDeep,
@@ -23,5 +27,9 @@ export {
     head,
     initial,
     intersection,
-    join
+    join,
+    findIndex,
+    reverse,
+    tail,
+    union
 }
