@@ -14,6 +14,7 @@ import findIndex from "./findIndex";
 import reverse from "./reverse";
 import tail from './tail';
 import union from "./union"
+import pull from "./pull";
 
 export {
     cloneDeep,

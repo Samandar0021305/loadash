@@ -24,3 +24,4 @@ Here is a brief description of each function included in this package:
 | `reverse`        | Reverses the order of the elements in an array.                                                                    | `reverse([1, 2, 3]);`                               |
 | `tail`           | Returns a new array excluding the first element.                                                                   | `tail([1, 2, 3]);`                                  |
 | `union`          | Combines multiple arrays into a single array, removing duplicate elements.                                         | `union([1, 2], [2, 3], [3, 4]);`                    |
+| `pull`           | Removes all instances of the given values from an array.                                                           | `pull([1, 2, 3, 4, 5], 2, 4);`                      |
