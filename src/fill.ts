@@ -1,6 +1,7 @@
 export default function fill<T>(arr: T[] = [], modif: T, start?: number, end?: number): T[] {
   if (start === undefined && end === undefined) {
-    for (let i = 0; i < arr.length; i++) {
+    const n = arr.length;
+    for (let i = 0; i < n; i++) {
       arr[i] = modif;
     }
   } 
