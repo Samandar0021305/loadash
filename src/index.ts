@@ -12,25 +12,32 @@ import intersection from "./intersection";
 import join from "./join";
 import findIndex from "./findIndex";
 import reverse from "./reverse";
-import tail from './tail';
-import union from "./union"
+import tail from "./tail";
+import union from "./union";
 import pull from "./pull";
+import forEach from "./forEach";
+import uniq from "./uniq";
+import take from "./take";
 
 export {
-    cloneDeep,
-    once,
-    concat,
-    get,
-    difference,
-    drop,
-    fill,
-    flattenDeep,
-    head,
-    initial,
-    intersection,
-    join,
-    findIndex,
-    reverse,
-    tail,
-    union
-}
+  take,
+  uniq,
+  forEach,
+  cloneDeep,
+  once,
+  concat,
+  get,
+  difference,
+  drop,
+  fill,
+  flattenDeep,
+  head,
+  initial,
+  intersection,
+  join,
+  findIndex,
+  reverse,
+  tail,
+  union,
+  pull,
+};
